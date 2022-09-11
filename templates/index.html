@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Testaus(UP)time</h2>
+{% for site in websites %}
+<div>
+    <h4>{{ site.name }}</h4>
+    <p>{{ site.description }}</p>
+    {% if site.status == "Up" %}
+        <p style="color:rgb(0, 255, 0);">Status: Up</p>
+    {% else %}
+        <p style="color:rgb(255, 0, 0);">Status: Down</p>
+    {% endif %}
+</div>
+{% endfor %}
+{% endblock content %}

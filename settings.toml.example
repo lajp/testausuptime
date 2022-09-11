@@ -1,0 +1,11 @@
+[[websites]]
+endpoint = "https://example.org"
+method = "GET"
+name = "Example website"
+description = "no description"
+
+[[websites]]
+endpoint = "https://example.org/random/endpoint"
+method = "POST"
+name = "POST to /random/endpoint"
+description = "Not a GET request"
